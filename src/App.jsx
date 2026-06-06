@@ -29,7 +29,9 @@ function loadDB() {
       return {
         ...SEED,
         ...parsed,
-        monthlySpend: SEED.monthlySpend, // always use fresh spend data
+        monthlySpend:  SEED.monthlySpend,   // always use fresh spend data
+        categorySpend: SEED.categorySpend,  // always use fresh category data
+        topVendors:    SEED.topVendors,     // always use fresh top vendors
       };
     }
   } catch {}
